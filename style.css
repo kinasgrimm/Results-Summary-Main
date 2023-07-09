@@ -1,0 +1,175 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Hanken Grotesk';
+  font-weight: normal;
+  background-color: hsl(221, 100%, 96%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+.result-card {
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  width: 600px;
+}
+.card1 {
+  background: linear-gradient(
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  width: 50%;
+  height: 450px;
+  border-radius: 20px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.your-result {
+  margin-bottom: 30px;
+}
+.score {
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.score-number {
+  font-size: 60px;
+}
+.great {
+  font-weight: 800;
+  border-bottom: 100px;
+}
+.remark {
+  font-weight: 400;
+
+  color: rgb(233, 233, 233);
+}
+.card2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 450px;
+  padding: 35px;
+  justify-content: space-between;
+}
+.summary {
+  text-align: left;
+}
+.summary-ability {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.summary-ability:last-child {
+  border-bottom: none;
+}
+.ability {
+  display: flex;
+  justify-content: space-between;
+}
+.ability-svg {
+  margin-right: 5px;
+}
+.reaction {
+  color: hsl(0, 100%, 67%);
+}
+.reaction-bg {
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+.memory {
+  color: hsl(39, 100%, 56%);
+}
+.memory-bg {
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+.verbal {
+  color: hsl(166, 100%, 37%);
+}
+.verbal-bg {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+.visual {
+  color: hsl(234, 85%, 45%);
+}
+.visual-bg {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.continue {
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+}
+.continue:hover,
+.continue:focus {
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 1)
+  );
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: n;
+}
+
+@media (max-width: 420px) {
+  .result-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .card1 {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .card2 {
+    width: 100%;
+  }
+}
